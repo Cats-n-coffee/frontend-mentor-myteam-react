@@ -34136,18 +34136,18 @@ var Header = function Header() {
   }), /*#__PURE__*/_react.default.createElement("ul", null, /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
     to: "/",
     onClick: function onClick() {
-      isMenuOpen ? toggleMobileMenu : null;
+      isMenuOpen ? toggleMobileMenu() : null;
     }
   }, "home")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
     to: "/about",
     onClick: function onClick() {
-      isMenuOpen ? toggleMobileMenu : null;
+      isMenuOpen ? toggleMobileMenu() : null;
     }
   }, "about")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
     to: "/contact",
     className: "btn btn-primary-light",
     onClick: function onClick() {
-      isMenuOpen ? toggleMobileMenu : null;
+      isMenuOpen ? toggleMobileMenu() : null;
     }
   }, "contact us"))))));
 };
@@ -34935,7 +34935,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55498" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56869" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
