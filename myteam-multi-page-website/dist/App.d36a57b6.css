@@ -282,6 +282,7 @@ footer .footer-wrapper .attribution a {
   left: 0;
   width: 200px;
   height: 144px;
+  display: block;
   background-image: url("/bg-pattern-home-6-about-5.4dcd4453.svg");
   background-repeat: no-repeat;
 }
