@@ -1117,6 +1117,7 @@ footer .footer-wrapper .attribution a {
 }
 .contact-page .contact-wrapper .contact-form form .form-element input:hover input, .contact-page .contact-wrapper .contact-form form .form-element input:hover textarea, .contact-page .contact-wrapper .contact-form form .form-element input:focus input, .contact-page .contact-wrapper .contact-form form .form-element input:focus textarea, .contact-page .contact-wrapper .contact-form form .form-element textarea:hover input, .contact-page .contact-wrapper .contact-form form .form-element textarea:hover textarea, .contact-page .contact-wrapper .contact-form form .form-element textarea:focus input, .contact-page .contact-wrapper .contact-form form .form-element textarea:focus textarea {
   border-bottom: 1px solid #79C8C7;
+  outline: none;
 }
 .contact-page .contact-wrapper .contact-form form .form-element label {
   visibility: hidden;
@@ -1159,6 +1160,7 @@ footer .footer-wrapper .attribution a {
   width: 123px;
   height: 48px;
   margin: 1.5em 0 0 0;
+  cursor: pointer;
 }
 .contact-page:after {
   content: "";
