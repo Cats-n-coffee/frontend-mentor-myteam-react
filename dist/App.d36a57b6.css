@@ -722,26 +722,17 @@ footer .footer-wrapper .attribution a {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
   width: 100%;
   max-width: 350px;
   height: 253px;
   background: #012F34;
   padding: 2.7em 3em 0 3em;
   position: relative;
-  -webkit-transition: 500ms;
-  transition: 500ms;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-transform: perspective(1000px) rotateY(var(--rotate-y, 0));
-          transform: perspective(1000px) rotateY(var(--rotate-y, 0));
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
 }
 .about-section-2 .about-section-2-wrapper .team-members .card.flipped {
   background: #002529;
-  --rotate-y: 180deg;
 }
 .about-section-2 .about-section-2-wrapper .team-members .card:not(:first-child) {
   margin: 4.7em 0 0 0;
@@ -784,6 +775,8 @@ footer .footer-wrapper .attribution a {
   position: absolute;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
 }
 .about-section-2 .about-section-2-wrapper .team-members .card .card-front img {
   width: 96px;
@@ -812,6 +805,12 @@ footer .footer-wrapper .attribution a {
 .about-section-2 .about-section-2-wrapper .team-members .card .card-front .flip-card-front:hover, .about-section-2 .about-section-2-wrapper .team-members .card .card-front .flip-card-front:focus {
   background-color: #79C8C7;
 }
+.about-section-2 .about-section-2-wrapper .team-members .card .card-front.flip-front {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: perspective(1000px) rotateY(180deg);
+          transform: perspective(1000px) rotateY(180deg);
+}
 .about-section-2 .about-section-2-wrapper .team-members .card .card-back {
   display: -webkit-box;
   display: -webkit-flex;
@@ -826,13 +825,15 @@ footer .footer-wrapper .attribution a {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
   position: absolute;
   padding: 0 3em 0 3em;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   background: #002529;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
 }
 .about-section-2 .about-section-2-wrapper .team-members .card .card-back h3 {
   color: #79C8C7;
@@ -872,6 +873,12 @@ footer .footer-wrapper .attribution a {
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
+}
+.about-section-2 .about-section-2-wrapper .team-members .card .card-back.flip-back {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: perspective(1000px) rotateY(0deg);
+          transform: perspective(1000px) rotateY(0deg);
 }
 .about-section-2:before, .about-section-2:after {
   content: "";
@@ -1638,7 +1645,7 @@ footer .footer-wrapper .attribution a {
   }
   .about-section-2 .about-section-2-wrapper .team-members .card {
     margin: 0 0 6em 0;
-    padding: 2.7em 4em 0 4em;
+    padding: 2.7em 4.5em 0 4.5em;
   }
   .about-section-2 .about-section-2-wrapper .team-members .card:not(:first-child) {
     margin: 0 0 6em 0.5em;

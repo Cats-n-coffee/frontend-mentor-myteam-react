@@ -34307,7 +34307,7 @@ var TeamMembers = function TeamMembers(_ref) {
   return /*#__PURE__*/_react.default.createElement("article", {
     className: "card ".concat(isFlipped ? "flipped" : "")
   }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "card-front"
+    className: "card-front ".concat(isFlipped ? "flip-front" : "")
   }, /*#__PURE__*/_react.default.createElement("img", {
     src: member.image,
     alt: "team member's picture"
@@ -34326,7 +34326,7 @@ var TeamMembers = function TeamMembers(_ref) {
     fillRule: "evenodd",
     d: "M10 0v5.999L16 6v4h-6v6H6v-6H0V6h6V0h4z"
   })))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "card-back"
+    className: "card-back ".concat(isFlipped ? "flip-back" : "")
   }, /*#__PURE__*/_react.default.createElement("h3", null, member.name), /*#__PURE__*/_react.default.createElement("p", null, member.quote), /*#__PURE__*/_react.default.createElement("div", {
     className: "card-social"
   }, /*#__PURE__*/_react.default.createElement("svg", {
@@ -34935,7 +34935,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56869" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53792" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

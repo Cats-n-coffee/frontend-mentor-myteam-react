@@ -6,7 +6,7 @@ const TeamMembers = ({ member}) => {
     
     return (
                     <article className={`card ${ isFlipped ? "flipped" : "" }`}>
-                        <div className={`card-front`} >
+                        <div className={`card-front ${ isFlipped ? "flip-front" : "" }`} >
                             <img src={ member.image } alt="team member's picture"/>
                             <h3>{ member.name }</h3>
                             <span>{ member.title }</span>
@@ -16,7 +16,7 @@ const TeamMembers = ({ member}) => {
                                 </svg>
                             </button>
                         </div>
-                        <div className={`card-back`}>
+                        <div className={`card-back ${ isFlipped ? "flip-back" : "" }`}>
                             <h3>{ member.name }</h3>
                             <p>{ member.quote }</p>
                             <div className="card-social">
