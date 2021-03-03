@@ -36,6 +36,10 @@
         text-align: center;
         letter-spacing: .025rem;
         color: $white;
+        -webkit-transform: translateX(-200%);
+        transform: translateX(-200%);
+        -webkit-animation: 1s linear 500ms forwards slideFromLeft;
+                animation: 1s linear 500ms forwards slideFromLeft;
 
         span {
             color: $light-coral;
@@ -51,5 +55,52 @@
         color: $white;
         letter-spacing: .03rem;
         padding: 1.1em 0 0 0;
+        opacity: 0;
+        -webkit-animation: 1.5s linear 500ms forwards fadeIn;
+                animation: 1.5s linear 500ms forwards fadeIn;
+    }
+}
+
+@-webkit-keyframes slideFromLeft {
+    0% {
+        -webkit-transform: translateX(-200%);
+                transform: translateX(-200%);
+    }
+    100% {
+        -webkit-transform: translateX(0%);
+                transform: translateX(0%);
+    }
+}
+
+@keyframes slideFromLeft {
+    0% {
+        -webkit-transform: translateX(-200%);
+                transform: translateX(-200%);
+    }
+    100% {
+        -webkit-transform: translateX(0%);
+                transform: translateX(0%);
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    }
+    100% {
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    }
+    100% {
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     }
 }
