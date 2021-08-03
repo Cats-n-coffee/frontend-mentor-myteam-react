@@ -1,6 +1,7 @@
 # MyTeam Multi-page website - Frontend Mentor
 
-This project is a challenge from [Frontend Mentor](https://www.frontendmentor.io/).
+This project is a challenge from [Frontend Mentor](https://www.frontendmentor.io/). <br>
+[Live version](https://sharp-mayer-2c103a.netlify.app/about).
 
 ## About 
 
@@ -10,5 +11,5 @@ Team members data is in a JS object in a separate file. <br>
 The `AboutPage.js` component loops through the array of objects and calls the `TeamMembers.js` component for the card element.
 This component handles the state for the card being flipped or not and displays the appropriate content. <br>
 
-An extra component called `ScrollToTop.js` was added from the React documentation to bring the user back to the top of the page once they clicked a link.
+An extra component called `ScrollToTop.js` was added from the React documentation to bring the user back to the top of the page once they clicked a link. <br>
  
