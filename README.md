@@ -1,9 +1,14 @@
-This project is a challenge from Frontend Mentor (see frontend-mentor.md).
+# MyTeam Multi-page website - Frontend Mentor
 
-It is a multi-page website built with React and set up with Parcel.
-The styles are SCSS partials called from main.scss.
-The team members are in a JS object in a separate file. The AboutPage.js component loops through the array of objects and calls the TeamMembers.js component for the card element.
-This component handles the state for the card being flipped or not and displays the appropriate content. 
+This project is a challenge from [Frontend Mentor](https://www.frontendmentor.io/).
 
-An extra component called ScrollToTop.js was added from the React documentation to bring the user back to the top of the page once they clicked a link.
+## About 
+
+It is a multi-page website built with React and bundled with Parcel.
+The styles were organized and made using SCSS.<br>
+Team members data is in a JS object in a separate file. <br>
+The `AboutPage.js` component loops through the array of objects and calls the `TeamMembers.js` component for the card element.
+This component handles the state for the card being flipped or not and displays the appropriate content. <br>
+
+An extra component called `ScrollToTop.js` was added from the React documentation to bring the user back to the top of the page once they clicked a link.
  
